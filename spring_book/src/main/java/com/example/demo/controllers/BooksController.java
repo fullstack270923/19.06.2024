@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/books")
 public class BooksController {
 
-    @GetMapping("/{bookId}")
+    @GetMapping("/{bookId}")  // /23/johnnywalker/james/ id=23?title=johnywalekr&author=james
     public String getBookById(@PathVariable Integer bookId) {
         return "You requested book with id: " + bookId;
     }
